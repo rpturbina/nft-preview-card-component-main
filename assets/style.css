@@ -23,7 +23,12 @@ html {
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+body {
+    position: relative;
 }
 
 .main {
@@ -38,42 +43,58 @@ p {
     margin: auto;
     padding: 2.5rem;
     background-color: var(--clr-card-bg);
+    border-radius: 1.5rem;
 }
 
 .card__img {
     width: 100%;
+    border-radius: 0.5rem;
 }
 
 .card__title {
     color: var(--white);
+    font-size: 2.2rem;
+    margin-top: 1.8rem;
 }
 
 .card__description {
     color: var(--soft-blue);
+    margin-block: 1.5rem;
+    line-height: 1.6;
 }
 
 .card__icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--clr-line);
+    margin-block: 1.5rem;
 }
 
+.icon__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
 .eth-desc {
     color: var(--cyan);
+    font-weight: 600;
 }
 
 .clock-desc {
     color: var(--soft-blue);
+    font-weight: 400;
 }
 
 .card__creator {
     display: flex;
     align-items: center;
+    column-gap: 1.5rem;
+    border-top: 1px solid var(--clr-line);
+    padding-block: 1.5rem;
 }
 
 .avatar {
-    width: 25%;
+    max-width: 3.5rem;
 }
 
 .creator {
@@ -82,12 +103,23 @@ p {
 
 .creator__name {
     color: var(--white);
+    font-weight: 400;
+}
+
+.footer {
+    background-color: var(--clr-main-bg);
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    font-weight: 300;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: var(--white);
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--white);
 }
