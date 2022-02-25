@@ -26,6 +26,64 @@ p {
     font-size: 1.8rem;
 }
 
+.main {
+    min-height: 100vh;
+    display: flex;
+    background-color: var(--clr-main-bg);
+}
+
+.card {
+    height: 54.5rem;
+    width: 33rem;
+    margin: auto;
+    padding: 2.5rem;
+    background-color: var(--clr-card-bg);
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__title {
+    color: var(--white);
+}
+
+.card__description {
+    color: var(--soft-blue);
+}
+
+.card__icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--clr-line);
+}
+
+.eth-desc {
+    color: var(--cyan);
+}
+
+.clock-desc {
+    color: var(--soft-blue);
+}
+
+.card__creator {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 25%;
+}
+
+.creator {
+    color: var(--soft-blue);
+}
+
+.creator__name {
+    color: var(--white);
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
