@@ -121,7 +121,7 @@ a {
   -moz-column-gap: 1.5rem;
   column-gap: 1.5rem;
   border-top: 1px solid var(--clr-line);
-  padding-block: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .avatar {
@@ -142,16 +142,13 @@ a {
   transition: color 0.3s ease-in-out;
 }
 
-.footer {
-  background-color: var(--clr-main-bg);
+.attribution {
   position: absolute;
   bottom: 2rem;
   left: 0;
   right: 0;
   font-weight: 300;
-}
-.attribution {
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
   color: var(--soft-blue);
 }
@@ -179,8 +176,7 @@ a {
 /* Dekstop Responsive Design : 1440px */
 @media only screen and (min-width: 1440px) {
   .card {
-    width: 35rem;
-    height: 59rem;
+    max-width: 35rem;
   }
   .card__description {
     margin-block: 1.8rem;
