@@ -60,7 +60,7 @@ a {
 }
 
 .img-wrapper::before {
-  content: url("/images/icon-view.svg");
+  content: url("../images/icon-view.svg");
   position: absolute;
   z-index: 100;
   display: flex;
