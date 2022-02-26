@@ -1,72 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
-
-        <title>Frontend Mentor | NFT preview card component</title>
-        <link rel="stylesheet" href="assets/style.css" />
-    </head>
-    <body>
-        <main class="main">
-            <div class="card">
-                <div class="img-wrapper">
-                    <img
-                        src="images/image-equilibrium.jpg"
-                        alt=""
-                        class="card__img"
-                    />
-                    <div class="img-overlay">
-                        <img
-                            src="images/icon-view.svg"
-                            alt=""
-                            class="overlay__icon"
-                        />
-                    </div>
-                </div>
-                <h1 class="card__title">Equilibrium #3429</h1>
-                <p class="card__description">
-                    Our Equilibrium collection promotes balance and calm.
-                </p>
-                <div class="card__icon">
-                    <div class="icon__wrapper">
-                        <img src="images/icon-ethereum.svg" alt="" />
-                        <p class="eth-desc">0.041 ETH</p>
-                    </div>
-                    <div class="icon__wrapper">
-                        <img src="images/icon-clock.svg" alt="" />
-                        <p class="clock-desc">3 days left</p>
-                    </div>
-                </div>
-                <div class="card__creator">
-                    <img src="images/image-avatar.png" alt="" class="avatar" />
-                    <p class="creator">
-                        Creation of
-                        <span class="creator__name">Jules Wyvern</span>
-                    </p>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="attribution">
-                Challenge by
-                <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                    >Frontend Mentor</a
-                >. Coded by
-                <a href="https://rpturbina.github.io" target="_blank"
-                    >rpturbina</a
-                >.
-            </div>
-        </footer>
-    </body>
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="card">
+        <a
+          href="images/image-equilibrium.jpg"
+          class="img-wrapper"
+          target="_blank"
+        >
+          <img
+            src="images/image-equilibrium.jpg"
+            alt="equilibrium cube"
+            class="card__img"
+          />
+        </a>
+        <h1 class="card__title">
+          <a href="#" class="card__title">Equilibrium #3429</a>
+        </h1>
+        <p class="card__description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <ul class="card__icon">
+          <li class="icon__wrapper">
+            <img src="images/icon-ethereum.svg" alt="" aria-hidden="true" />
+            <p class="eth-desc">0.041 ETH</p>
+          </li>
+          <li class="icon__wrapper">
+            <img src="images/icon-clock.svg" alt="" aria-hidden="true" />
+            <p class="clock-desc">3 days left</p>
+          </li>
+        </ul>
+        <figure class="card__creator">
+          <img
+            src="images/image-avatar.png"
+            alt="Profile avatar of creator name"
+            class="avatar"
+          />
+          <figcaption>
+            <p class="creator">
+              Creation of
+              <a href="#" class="creator__name">Jules Wyvern</a>
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          aria-label="frontend mentor"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://rpturbina.github.io"
+          target="_blank"
+          aria-label="rpturbina"
+          >rpturbina</a
+        >.
+      </div>
+    </footer>
+  </body>
 </html>
