@@ -46,6 +46,8 @@ body {
     background-color: var(--clr-card-bg);
     border-radius: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transform: scale(0.95);
+    transition: all 0.5s ease;
 }
 
 .img-wrapper {
@@ -80,6 +82,7 @@ body {
     color: var(--white);
     font-size: 2.2rem;
     margin-top: 1.8rem;
+    width: fit-content;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
 }
@@ -152,6 +155,11 @@ body {
     color: var(--white);
 }
 /* Active State */
+.card:hover {
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px 8px;
+}
+
 .img-wrapper:hover .img-overlay {
     opacity: 1;
 }
