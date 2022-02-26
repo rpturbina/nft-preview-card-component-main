@@ -123,3 +123,18 @@ body {
 .attribution a {
     color: var(--white);
 }
+
+/* Dekstop Responsive Design : 1440px */
+@media only screen and (min-width: 1440px) {
+    .card {
+        width: 35rem;
+        height: 59rem;
+    }
+    .card__description {
+        margin-block: 1.8rem;
+        font-size: 1.8rem;
+    }
+    .card__icon {
+        margin-block: 2rem;
+    }
+}
