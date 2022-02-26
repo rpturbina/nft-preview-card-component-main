@@ -46,8 +46,8 @@ body {
     background-color: var(--clr-card-bg);
     border-radius: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    transform: scale(0.95);
-    transition: all 0.5s ease;
+    transform: scale(1);
+    transition: all 0.4s ease;
 }
 
 .img-wrapper {
@@ -125,6 +125,9 @@ body {
 
 .avatar {
     max-width: 3.5rem;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .creator {
@@ -156,7 +159,7 @@ body {
 }
 /* Active State */
 .card:hover {
-    transform: scale(1);
+    transform: scale(1.04);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px 8px;
 }
 
